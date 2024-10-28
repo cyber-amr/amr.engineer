@@ -31,9 +31,9 @@ const cmds = [
     "Showcase recent developments",
     "A selection of my latest projects. Each represents a unique\nchallenge and development experience. Explore and enjoy!",
     [
-      ["EventEmitter.jl", "Julia event handling system", "https://github.com/spirit-x64/EventEmitter.jl"],
-      ["amr-dev.info", "Terminal-style portfolio website", "https://github.com/spirit-x64/amr-dev.info"],
-      ["N-Shapes.jl", "Advanced multi-D shape manipulation", "https://github.com/spirit-x64/NShapes.jl"],
+      ["EventEmitter.jl", "Julia event handling system", "https://github.com/cyber-amr/EventEmitter.jl"],
+      ["amr-dev.info", "Terminal-style portfolio website", "https://github.com/cyber-amr/amr-dev.info"],
+      ["Shapes.jl", "Advanced multi-D shape manipulation", "https://github.com/cyber-amr/Shapes.jl"],
       ["OutLandish", "Survival game, still in early stages :3"]
     ]
   ], [
@@ -41,12 +41,11 @@ const cmds = [
     "Connect with me online",
     "Find me on various platforms. Each offers a different perspective\non my work and interests. Feel free to reach out :)",
     [
-      ["spirit@programmer.net", "Professional inquiries and offers", "mailto:spirit@programmer.net"],
+      ["amr@programmer.net", "Professional inquiries and offers", "mailto:amr@programmer.net"],
       ["Discord server", "Games and game development chat", "https://discord.amr-dev.info"],
-      ["𝕏 (Twitter)", "Casual life updates and memes", "https://x.com/spirit_x64"],
-      ["Instagram", "Visual snippets of my world :0", "https://instagram.com/spirit_x64"],
+      ["𝕏 (Twitter)", "Casual life updates and memes", "https://x.com/cyber_amr"],
       ["YouTube", "The typical place for dev logs", "https://youtube.com/@spirit-DEV"],
-      ["GitHub", "Where open sourced projects live", "https://github.com/spirit-x64"]
+      ["GitHub", "Where open sourced projects live", "https://github.com/cyber-amr"]
     ]
   ]
 ]
