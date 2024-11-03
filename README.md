@@ -4,4 +4,4 @@
 
 ##
 
-main branch is hosted on **<a href="https://spirit-x64.github.io/amr-dev.info/public" target="_blank">github pages</a>**
+main branch is hosted on **<a href="https://cyber-amr.github.io/amr-dev.info/public" target="_blank">github pages</a>**
