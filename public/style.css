@@ -37,8 +37,11 @@
   padding: 1rem;
 }
 
-.pressable:hover {
+.pressable {
   text-decoration: underline;
+}
+
+.pressable:hover {
   cursor: pointer;
   text-shadow: 0 0 0.5rem;
 }
