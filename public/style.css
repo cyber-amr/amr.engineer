@@ -26,7 +26,6 @@
 .cmd {
   color: #c2c2dccc;
   font-style: italic;
-  /* text-shadow: 0 0 0.5rem; */
 }
 
 .output {
@@ -41,13 +40,13 @@
 .pressable:hover {
   text-decoration: underline;
   cursor: pointer;
+  text-shadow: 0 0 0.5rem;
 }
 
 .list-title {
   font-size: 1.1rem;
   padding: 6px;
   color: #f67;
-  text-shadow: 0 0 0.5rem;
 }
 
 .hidden {
