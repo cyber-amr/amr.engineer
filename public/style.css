@@ -1,5 +1,5 @@
 :root {
-  background: #222;
+  background: #181820;
   color: #fff;
   font-family: 'Courier New', Courier, monospace;
   white-space: nowrap;
@@ -16,7 +16,7 @@
 }
 
 .user {
-  color: #ae3
+  color: #6996e6
 }
 
 .pwd {
@@ -24,7 +24,9 @@
 }
 
 .cmd {
-  text-shadow: 0 0 0.5rem;
+  color: #c2c2dccc;
+  font-style: italic;
+  /* text-shadow: 0 0 0.5rem; */
 }
 
 .output {
