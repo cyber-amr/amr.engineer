@@ -98,7 +98,7 @@ class Animator {
     while (this.id == (id ?? x) && this.i < (isStr(x) ? l.length : x.length)) {
       isStr(x) ? newElement(this.target, "div", l[this.i]) : this.listItem(x[this.i], l)
       this.i++
-      await sleep(100)
+      await sleep(50)
     }
   }
   async printChar(s) {
@@ -106,7 +106,7 @@ class Animator {
     while (this.id == s && this.i < s.length) {
       this.target.textContent += s.charAt(this.i)
       this.i++
-      await sleep(50)
+      await sleep(25)
     }
   }
 }
