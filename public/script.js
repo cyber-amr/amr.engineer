@@ -21,8 +21,6 @@ const cmds = [
       ["OpenGL", "Cross-platform 2D/3D graphics API", "https://www.opengl.org"],
       ["Godot", "Free open source light game engine", "https://godotengine.org"],
       ["Julia", "Highly optimized dynamic language", "https://julialang.org"],
-      ["Bash", "Powerful Unix shell and scripting", "https://www.gnu.org/software/bash"],
-      ["Git", "Distributed version control system", "https://git-scm.com"],
     ]
   ], [
     "projects",
