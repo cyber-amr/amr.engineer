@@ -27,7 +27,6 @@ const cmds = [
     "Showcase recent developments",
     "A selection of my latest projects. Each represents a unique\nchallenge and development experience. Explore and enjoy!",
     [
-      ["EventEmitter.jl", "Julia event handling system", "https://github.com/cyber-amr/EventEmitter.jl"],
       ["amr-dev.info", "Terminal-style portfolio website", "https://github.com/cyber-amr/amr-dev.info"],
       ["Shapes.jl", "Advanced multi-D shape manipulation", "https://github.com/cyber-amr/Shapes.jl"],
       ["OutLandish", "Survival game, still in early stages :3"]
