@@ -1,0 +1,84 @@
+:root {
+  background: #181820;
+  color: #abd;
+  font-family: 'Courier New', 'Lucida Console', monospace;
+  white-space: nowrap;
+  font-size: 2vh;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  background-color: #23293a;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  width: 100%;
+  max-width: 400px;
+}
+
+.prompt {
+  color: #7aa2f7;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.25rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #1a1b26;
+  border: 1px solid #414868;
+  color: #abd;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: #7ca3f6;
+}
+
+button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #7ca3f6;
+  color: #1a1b26;
+  border: none;
+  cursor: pointer;
+  font-family: 'Courier New', 'Lucida Console', monospace;
+  font-weight: bold;
+  margin: 0;
+}
+
+button:focus {
+  background-color: #5d86e4;
+}
+
+button:hover {
+  background-color: #5d86e4;
+}
+
+.cursor {
+  animation: blink 0.5s step-start 0s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}

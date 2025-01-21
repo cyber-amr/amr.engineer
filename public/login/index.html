@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Amr Dev - login</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1">
+  <meta name="description" content="Login to access Amr's games">
+  <meta name="keywords" content="Amr, cyber-amr, spirit, developer, engineer">
+  <meta property="og:image" content="https://amr-dev.info/cool_kai.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="icon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <script>
+    /*to prevent flashing of unstyled content on Firefox, this must be here*/
+    let FIX_FF_FOUC;
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MWHPXGX9FN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MWHPXGX9FN');
+  </script>
+</head>
+
+<body>
+  <div class="login-container">
+    <div class="prompt">$ login --authenticate</div>
+    <form>
+      <div class="input-group">
+        <label for="username">username@system:~$</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">password:~$</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">AUTHENTICATE<span class="cursor">█</span></button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
