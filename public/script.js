@@ -30,7 +30,7 @@ const cmds = [
     [
       ["amr-dev.info", "Terminal-style portfolio website", "https://github.com/cyber-amr/amr-dev.info"],
       ["Shapes.jl", "Advanced multi-D shape manipulation", "https://github.com/cyber-amr/Shapes.jl"],
-      ["OutLandish", "Survival game, still in early stages :3"]
+      ["LandSails", "Survival game, still in early stages :3", "https://amr-dev.info/LandSails/"]
     ]
   ], [
     "contact",
