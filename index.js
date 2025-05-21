@@ -36,7 +36,8 @@ app.get('/', (req, res, next) => {
 })
 
 app.use(express.static(join(__dirname, "public"), { 
-	maxAge: 600000 // 10 min
+	maxAge: 600000, // 10 min
+	dotfiles: "ignore"
 }))
 
 app.get('/views', (req, res) => {
