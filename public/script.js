@@ -14,7 +14,7 @@ const cmds = [
   [
     "tech-stack",
     "List my preferred technologies",
-    "My dev setup: Windows 10 for gaming, void-linux on WSL for coding.\nFocused on performance, flexibility, and open-source tools.",
+    "I'm a Void Linux user with a highly customized desktop environment.\nFocused on performance, flexibility, and open-source tools.",
     [
       ["void-linux", "Robust minimalist Linux distribution", "https://voidlinux.org"],
       ["Node.js", "JavaScript runtime for web-servers", "https://nodejs.org"],
