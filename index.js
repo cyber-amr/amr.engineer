@@ -1,6 +1,5 @@
 const compression = require('compression')
 const express = require("express")
-const { exec } = require('child_process')
 const { join } = require('path')
 const { existsSync, readFileSync, writeFileSync } = require('fs')
 const { homedir } = require('os')
@@ -56,13 +55,3 @@ app.get('/visitors', (req, res) => {
 app.listen(PORT, () => {
 	console.log(`Listening at http://localhost:${PORT}`)
 })
-
-if (existsSync(join(__dirname, "public", "scripts"))) {
-  exec('git pull', { cwd: join(__dirname, "public", "scripts") }, (error) => {
-    if (error) console.log('Updating scripts failed (ignoring):', error.message)
-  })
-} else {
-  exec(`git clone https://github.com/cyber-amr/scripts.git ${join(__dirname, "public", "scripts")}`, (error) => {
-    if (error) console.log('Scripts repo cloning failed (ignoring):', error.message)
-  })
-}
