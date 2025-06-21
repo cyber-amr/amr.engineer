@@ -29,6 +29,7 @@ const cmds = [
     "A selection of my latest projects. Each represents a unique\nchallenge and development experience. Explore and enjoy!",
     [
       ["amr-dev.info", "Terminal-style portfolio website", "https://github.com/cyber-amr/amr-dev.info"],
+      ["mini-polkit", "mini agent for polkit authentication", "https://amr-dev.info/mini-polkit/"],
       ["Shapes.jl", "Advanced multi-D shape manipulation", "https://github.com/cyber-amr/Shapes.jl"],
     ]
   ], [
