@@ -32,6 +32,23 @@ body {
     border-bottom: 1px solid #333;
 }
 
+.nav-home {
+    margin-bottom: 20px;
+}
+
+.home-link {
+    color: #888;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 0;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.home-link:hover {
+    color: #00ccff;
+}
+
 .header {
     margin-bottom: 40px;
 }
