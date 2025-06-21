@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>mini-polkit - Amr Dev</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1">
+  <meta name="description" content="mini-polkit is a secure and minimal PolicyKit authentication agent">
+  <meta name="keywords" content="polkit, authentication, agent, minimal, C, linux, security">
+  <meta property="og:image" content="https://amr-dev.info/cool_kai.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="icon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <script>
+    function copyCode(button) {
+      const codeBlock = button.parentElement;
+      const code = codeBlock.querySelector('pre').textContent;
+
+      navigator.clipboard.writeText(code).then(() => {
+        const originalText = button.textContent;
+        button.textContent = 'COPIED!';
+        button.classList.add('copied');
+
+        setTimeout(() => {
+          button.textContent = originalText;
+          button.classList.remove('copied');
+        }, 2000);
+      }).catch(() => {
+        button.textContent = 'FAILED';
+        setTimeout(() => button.textContent = 'COPY', 2000);
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container-title">$ cat /usr/src/mini-polkit/README.md</div>
+
+    <div class="header">
+      <h1 class="project-title">mini-polkit</h1>
+      <p class="subtitle">A secure and minimal PolicyKit authentication agent designed for lightweight and
+        embedded Linux environments. It provides a secure, modular and customizable way to interact with
+        PolicyKit authorization requests via external prompt tools.</p>
+
+      <div class="tagline">
+        Built for simplicity. Designed for power users.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Features</h2>
+      <div class="features">
+        <div class="feature">
+          <div class="feature-title">Minimal Codebase</div>
+          <div class="feature-desc">Pure <span class="highlight">C</span> implementation with only 307 lines
+            of code</div>
+        </div>
+        <div class="feature">
+          <div class="feature-title">Zero Bloat</div>
+          <div class="feature-desc">Only depends on <span class="highlight">glib</span> and <span
+              class="highlight">polkit</span></div>
+        </div>
+        <div class="feature">
+          <div class="feature-title">Universal Integration</div>
+          <div class="feature-desc">Works with <span class="highlight">dmenu</span>, <span
+              class="highlight">rofi</span>, <span class="highlight">zenity</span> or any custom script
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-title">Secure by Design</div>
+          <div class="feature-desc">Performant and highly secure password handling (no lingering in memory)
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-title">Display Server Agnostic</div>
+          <div class="feature-desc"><span class="highlight">X11</span> and <span class="highlight">Wayland</span> ready,
+            depending on your prompt manager</div>
+        </div>
+        <div class="feature">
+          <div class="feature-title">Versatile Environment</div>
+          <div class="feature-desc">Suitable for <span class="highlight">tiling</span> Window Managers and
+            <span class="highlight">floating</span> setups
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Performance <span class="accent">(on my ancient system)</span></h2>
+      <div class="perf-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Benchmark</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Language</strong></td>
+              <td>C</td>
+            </tr>
+            <tr>
+              <td><strong>Lines of Code</strong></td>
+              <td>307</td>
+            </tr>
+            <tr>
+              <td><strong>Memory Usage (RSS)</strong></td>
+              <td>≤5.6 MB</td>
+            </tr>
+            <tr>
+              <td><strong>Startup Time</strong></td>
+              <td>≤15 ms</td>
+            </tr>
+            <tr>
+              <td><strong>Authentication Latency</strong></td>
+              <td>≤40 ms</td>
+            </tr>
+            <tr>
+              <td><strong>Process Count</strong></td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><strong>D-Bus Roundtrips</strong></td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Usage</h2>
+      <p>When <span class="highlight">PolKit</span> requests authentication, <span class="highlight">mini-polkit</span>
+        runs your command, reads the stdout as the password, then
+        securely passes it to PolKit via D-Bus — thats it <span class="accent">:3</span></p>
+
+      <p>To show the <span class="highlight">PolKit</span> message inside your prompt, use <span
+          class="highlight">{{MESSAGE}}</span>:</p>
+
+      <div class="code-block">
+        <pre>mini-polkit "zenity --password --title='{{MESSAGE}}'"</pre>
+        <button class="copy-btn" onclick="copyCode(this)">COPY</button>
+      </div>
+
+      <p>As long as your tool writes the password to stdout, you're good.</p>
+
+      <p>Run <strong>mini-polkit</strong> in the background (e.g. using &), to make it act as a full-time agent
+      </p>
+
+      <div class="code-block">
+        <pre>mini-polkit "zenity --password" &</pre>
+        <button class="copy-btn" onclick="copyCode(this)">COPY</button>
+      </div>
+
+      <p>You can autostart it via <span class="highlight">.xinitrc</span>, <span class="highlight">.bash_profile</span>,
+        <span class="highlight">systemd</span> or whatever you like.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Installation</h2>
+      <div class="install-steps">
+        <h4>Clone, build and install manually:</h4>
+        <div class="dependencies">(deps. gcc, make, pkg-config, polkit-agent-1, glib->v2.0)</div>
+
+        <div class="code-block">
+          <pre>git clone https://github.com/cyber-amr/mini-polkit.git
+cd mini-polkit
+doas make install</pre>
+          <button class="copy-btn" onclick="copyCode(this)">COPY</button>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <a href="https://github.com/cyber-amr/mini-polkit" target="_blank" class="button">
+          VIEW ON GITHUB <span class="blink">█</span>
+        </a>
+        <a href="https://github.com/cyber-amr/mini-polkit/releases" target="_blank" class="button">
+          DOWNLOAD RELEASE <span class="blink">█</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="security-note">
+        <h4>Security Notes</h4>
+        <ul>
+          <li>Password is securely passed to PolicyKit via DBus and wrecked right afterwards from memory.</li>
+          <li>Input is read from stdin to avoid command-line exposure.</li>
+          <li>It is <strong>your responsibility</strong> to ensure the prompt tool handles input securely
+            (e.g., <span class="highlight">dmenu</span> with <span class="highlight">-P</span>, <span
+              class="highlight">rofi</span> with <span class="highlight">-password</span>).</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p><strong>License: </strong>
+        <a href="https://github.com/cyber-amr/mini-polkit/blob/main/LICENSE" target="_blank" style="color: #00ccff;">MIT
+          License</a>
+      </p>
+      <p style="margin-top: 10px;">Made with <span class="accent">♥</span> for the Linux community</p>
+    </div>
+  </div>
+</body>
+
+</html>
