@@ -3,7 +3,7 @@
 //   / = \| '_ ` _ \| '__| | | | |/ _ \ \ / /
 //  / ___ | | | | | | |    | |_| |  __/\ V /
 // /_/   \|_| |_| |_|_|    |____/ \___| \_/
-// 
+//
 const HLP = "℗℗℗℗_℗℗℗℗℗℗℗℗℗℗℗℗℗℗℗℗℗℗℗℗____℻℗℗℗/℗\\℗℗_℗__℗___℗℗_℗__℗℗|℗℗_℗\\℗℗_____℗℗℗__℻℗℗/℗=℗\\|℗'_℗`℗_℗\\|℗'__|℗|℗|℗|℗|/℗_℗\\℗\\℗/℗/℻℗/℗___℗|℗|℗|℗|℗|℗|℗|℗℗℗℗|℗|_|℗|℗℗__/\\℗V℗/℻/_/℗℗℗\\|_|℗|_|℗|_|_|℗℗℗℗|____/℗\\___|℗\\_/℻℗℻"
   .concat("℻℗℻Hello! I'm Amr :3℻a Music enthusiast and hobbyist programmer.℻I specialize in crafting efficient and performant systems.℻My journey in tech is driven by curiosity and ecstasy for development.℻℗")
   .concat("℻℗℻commands: (click to run)")
@@ -30,7 +30,6 @@ const cmds = [
     [
       ["amr-dev.info", "Terminal-style portfolio website", "https://github.com/cyber-amr/amr-dev.info"],
       ["Shapes.jl", "Advanced multi-D shape manipulation", "https://github.com/cyber-amr/Shapes.jl"],
-      ["LandSails", "Survival game, still in early stages :3", "https://amr-dev.info/LandSails/"]
     ]
   ], [
     "contact",
