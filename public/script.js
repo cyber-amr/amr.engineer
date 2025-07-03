@@ -30,6 +30,7 @@ const cmds = [
     [
       ["amr-dev.info", "Terminal-style portfolio website", "https://github.com/cyber-amr/amr-dev.info"],
       ["mini-polkit", "mini agent for polkit authentication", "https://amr-dev.info/mini-polkit/"],
+      ["Pyréleus", "Action-adventure survival horror game", "https://amr-dev.info/tartarus/"],
     ]
   ], [
     "contact",
