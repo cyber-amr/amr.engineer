@@ -28,9 +28,9 @@ const cmds = [
     "Showcase recent developments",
     "A selection of my latest projects. Each represents a unique\nchallenge and development experience. Explore and enjoy!",
     [
-      ["amr-dev.info", "Terminal-style portfolio website", "https://github.com/cyber-amr/amr-dev.info"],
-      ["mini-polkit", "mini agent for polkit authentication", "https://amr-dev.info/mini-polkit/"],
-      ["Pyréleus", "Action-adventure survival horror game", "https://amr-dev.info/tartarus/"],
+      ["amr.engineer", "Terminal-style portfolio website", "https://github.com/cyber-amr/amr.engineer"],
+      ["mini-polkit", "mini agent for polkit authentication", "https://amr.engineer/mini-polkit/"],
+      ["Pyréleus", "Action-adventure survival horror game", "https://amr.engineer/tartarus/"],
     ]
   ], [
     "contact",
@@ -136,7 +136,7 @@ async function run(cmd) {
 (async () => {
   const a = new Animator(get(".help .output"))
 
-  await (new Animator(get(".help .cmd"))).printChar("amr-dev.info --help")
+  await (new Animator(get(".help .cmd"))).printChar("amr.engineer --help")
   await a.print(HLP)
   a.reset()
 

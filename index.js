@@ -35,13 +35,13 @@ app.get('/', (req, res, next) => {
 	next()
 })
 
-app.use(express.static(join(__dirname, "public"), { 
+app.use(express.static(join(__dirname, "public"), {
 	maxAge: 600000, // 10 min
 	dotfiles: "ignore"
 }))
 
 app.get('/views', (req, res) => {
-	res.send(`Total visits: ${visitCount} | Unique visitors: ${uniqueIPs.size} | back to site: <a href="https://amr-dev.info">amr-dev.info</a>`)
+	res.send(`Total visits: ${visitCount} | Unique visitors: ${uniqueIPs.size} | back to site: <a href="https://amr.engineer">amr.engineer</a>`)
 })
 
 app.get('/visits', (req, res) => {

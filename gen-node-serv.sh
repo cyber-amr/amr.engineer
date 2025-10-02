@@ -1,6 +1,6 @@
 #!/bin/bash
 
-APP_NAME="amr-dev.info"
+APP_NAME="amr.engineer"
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 # Find the node executable path
