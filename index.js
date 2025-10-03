@@ -52,6 +52,10 @@ app.get('/visitors', (req, res) => {
 	res.send('' + uniqueIPs.size)
 })
 
+app.use((req, res) => {
+	res.status(404).sendFile(join(__dirname, 'public', '404.html'))
+})
+
 app.listen(PORT, () => {
 	console.log(`Listening at http://localhost:${PORT}`)
 })
