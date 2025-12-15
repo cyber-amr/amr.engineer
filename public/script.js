@@ -38,7 +38,7 @@ const cmds = [
     "Find me on various platforms. Each offers a different perspective\non my work and interests. Feel free to reach out :)",
     [
       ["amr@programmer.net", "Professional inquiries and offers", "mailto:amr@programmer.net"],
-      ["𝕏 (Twitter)", "Casual life updates and memes", "https://x.com/cyber_amr"],
+      ["𝕏 (Twitter)", "Casual life updates and memes", "https://x.com/SpiritAmr"],
       ["itch.io", "Published and unpublished games", "https://cyber-amr.itch.io"],
       ["YouTube", "The typical place for dev logs", "https://youtube.com/@cyber-amr"],
       ["GitHub", "Where open sourced projects live", "https://github.com/cyber-amr"]
