@@ -30,7 +30,7 @@ const cmds = [
     [
       ["amr.engineer", "Terminal-style portfolio website", "https://github.com/cyber-amr/amr.engineer"],
       ["mini-polkit", "mini agent for polkit authentication", "https://amr.engineer/mini-polkit/"],
-      ["Pyréleus", "Action-adventure survival horror game", "https://amr.engineer/tartarus/"],
+      ["Τάρταρος", "Indie game studio and publisher", "https://amr.engineer/tartarus/"],
     ]
   ], [
     "contact",
