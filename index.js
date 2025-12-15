@@ -52,7 +52,7 @@ app.get('/visitors', (req, res) => {
 	res.send('' + uniqueIPs.size)
 })
 
-app.use((req, res) => {
+app.use((req, res, next) => {
 	res.status(404).sendFile(join(__dirname, 'public', '404.html'))
 })
 
