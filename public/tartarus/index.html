@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Redirecting...</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/x-icon" href="/icon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="/icon.svg">
+  <script>
+    let FIX_FF_FOUC;
+  </script>
+</head>
+
+<body>
+  <div class="terminal">
+    <div class="help">
+      <span class="prompt user">system@redirect:</span>
+      <span class="prompt pwd">~$</span>
+      <span class="cmd">redirect</span><span class="blink cursor">|</span>
+      <div class="output"><span id="status">Redirecting in <span id="countdown">3</span> seconds...</span>
+
+        Click here: <a id="redirect-link" class="pressable" href="https://tartarus.studio">link</a></div>
+    </div>
+  </div>
+  <script>
+    const REDIRECT_URL = 'https://tartarus.studio';
+
+    const countdownEl = document.getElementById('countdown');
+    const statusEl = document.getElementById('status');
+    const linkEl = document.getElementById('redirect-link');
+    linkEl.href = REDIRECT_URL;
+
+    let count = 3;
+    let stopped = false;
+
+    const timer = setInterval(() => {
+      count--;
+      countdownEl.textContent = count;
+      if (count <= 0) {
+        clearInterval(timer);
+        window.location.href = REDIRECT_URL;
+      }
+    }, 1000);
+
+    const stopRedirect = () => {
+      if (!stopped) {
+        stopped = true;
+        clearInterval(timer);
+        statusEl.textContent = 'Auto-redirect stopped.';
+      }
+    };
+
+    document.addEventListener('click', stopRedirect);
+    document.addEventListener('keydown', stopRedirect);
+  </script>
+</body>
+
+</html>
