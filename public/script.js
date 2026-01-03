@@ -28,7 +28,7 @@ const cmds = [
     "Showcase recent developments",
     "A selection of my latest projects. Each represents a unique\nchallenge and development experience. Explore and enjoy!",
     [
-      ["amr.engineer", "Terminal-style portfolio website", "https://github.com/cyber-amr/amr.engineer"],
+      ["amr.engineer", "Terminal-style portfolio website", "https://github.com/amr-engineer/amr.engineer"],
       ["mini-polkit", "mini agent for polkit authentication", "https://amr.engineer/mini-polkit/"],
       ["Τάρταρος", "Indie game studio and publisher", "https://amr.engineer/tartarus/"],
     ]
@@ -41,7 +41,7 @@ const cmds = [
       ["𝕏 (Twitter)", "Casual life updates and memes", "https://x.com/SpiritAmr"],
       ["itch.io", "Published and unpublished games", "https://amr-dev.itch.io"],
       ["YouTube", "The typical place for dev logs", "https://youtube.com/@cyber-amr"],
-      ["GitHub", "Where open sourced projects live", "https://github.com/cyber-amr"]
+      ["GitHub", "Where open sourced projects live", "https://github.com/amr-engineer"]
     ]
   ]
 ]
