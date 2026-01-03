@@ -40,7 +40,7 @@ const cmds = [
       ["amr@programmer.net", "Professional inquiries and offers", "mailto:amr@programmer.net"],
       ["𝕏 (Twitter)", "Casual life updates and memes", "https://x.com/SpiritAmr"],
       ["itch.io", "Published and unpublished games", "https://amr-dev.itch.io"],
-      ["YouTube", "The typical place for dev logs", "https://youtube.com/@cyber-amr"],
+      ["YouTube", "The typical place for dev logs", "https://youtube.com/@amr-engineer"],
       ["GitHub", "Where open sourced projects live", "https://github.com/amr-engineer"]
     ]
   ]
